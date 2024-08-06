@@ -1,0 +1,79 @@
+.custom-header {
+    /* Estilos específicos para o header */
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+}
+
+.custom-header a {
+    color: #af1313;
+    text-decoration: none;
+}
+
+.custom-header a:hover {
+    background: #e72929;
+    color: white;
+    cursor: pointer;
+}
+
+.custom-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 0 1rem; /* Adiciona espaçamento lateral */
+}
+
+.custom-header a.logo {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.custom-header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Faz com que o `ul` use o espaço disponível */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+}
+
+.custom-header ul li {
+    margin: 0;
+}
+
+.custom-header ul li.login-item {
+    margin-right: auto; /* Empurra o item de login para a esquerda */
+}
+
+.custom-header ul a {
+    padding: 1rem;
+    display: inline-block;
+}
+
+.custom-header a span {
+    background: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size: 0.9rem;
+}
+
+.custom-header .menu-container {
+    position: relative;
+}
+
+.custom-header .menu {
+    position: absolute;
+    z-index: 1;
+    background: whitesmoke;
+    display: none;
+}
+
+.custom-header .menu-container:hover .menu {
+    display: block;
+}
+
+.custom-header .menu a {
+    width: 100%;
+    min-width: 8rem;
+}
